@@ -1,12 +1,17 @@
 {
-  "name": "server",
+  "name": "Pokedex Server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "API serving pokemon information and images",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "prettier": "^2.2.1"
+  }
 }
