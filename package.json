@@ -4,7 +4,9 @@
   "description": "API serving pokemon information and images",
   "main": "server/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-server": "cd server && npm start",
+    "test": "mocha e2e-spec.js",
+    "ci": "start-server-and-test start-server http://localhost:3000"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "start-server-and-test": "^1.11.7"
   }
 }
