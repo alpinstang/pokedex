@@ -1,8 +1,6 @@
 # pokedex
 
-Pokedex collaborative project. NodeJS and React
-
-[![Build Status](https://travis-ci.org/alpinstang/pokedex.svg?branch=master)](https://travis-ci.org/alpinstang/pokedex)
+Pokedex collaborative project. [![Build Status](https://travis-ci.org/alpinstang/pokedex.svg?branch=master)](https://travis-ci.org/alpinstang/pokedex)
 
 Written in React Typescript and NodeJS
 
