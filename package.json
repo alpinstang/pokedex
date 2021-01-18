@@ -1,0 +1,23 @@
+{
+  "name": "pokedex-server",
+  "version": "1.0.0",
+  "description": "API serving pokemon information and images",
+  "main": "server/app.js",
+  "scripts": {
+    "start-server": "cd server && node app.js",
+    "test": "cd server && cd test && mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "4.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mocha": "^8.2.1",
+    "morgan": "^1.10.0",
+    "prettier": "^2.2.1",
+    "request": "^2.88.2",
+    "supertest": "^6.1.1"
+  }
+}
