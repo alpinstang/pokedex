@@ -9,4 +9,4 @@ cache: npm
 script: node app.js
 
 before_script:
-  - cd server && npm install
+  - npm install && cd server
