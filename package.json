@@ -4,7 +4,7 @@
   "description": "API serving pokemon information and images",
   "main": "server/app.js",
   "scripts": {
-    "start-server": "cd server && npm start",
+    "start-server": "cd server && node app.js",
     "test": "mocha e2e-spec.js",
     "ci": "start-server-and-test start-server http://localhost:3000"
   },
@@ -14,6 +14,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "mocha": "^8.2.1",
     "morgan": "^1.10.0",
     "prettier": "^2.2.1",
     "start-server-and-test": "^1.11.7"
