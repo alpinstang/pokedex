@@ -1,17 +1,20 @@
-const request = require("supertest");
-const assert = require("assert");
+const supertest = require("supertest");
 const app = require("../app");
 
-describe("Test server is running", function () {
-  afterAll(async (done) => {
-    await app.close();
+describe("int::app", function () {
+  let request = null;
+  let server = null;
 
-    app.server.stop();
-    done();
+  before(function (done) {
+    server = app.listen(done);
+    request = supertest.agent(server);
   });
 
-  it("GET / responds with 200", async () => {
-    const result = await app.get("/");
-    expect(result.status).toEqual(200);
+  after(function (done) {
+    server.close(done);
+  });
+
+  it("should get /", function () {
+    return request.get("/").expect(200);
   });
 });
