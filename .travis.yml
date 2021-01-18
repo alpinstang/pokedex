@@ -7,5 +7,5 @@ node_js:
 script:
   - node app.js
 
-  before_script:
+before_script:
   - cd server
